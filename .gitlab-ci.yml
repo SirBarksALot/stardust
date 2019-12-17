@@ -1,0 +1,33 @@
+variables:
+  GIT_CLONE_PATH: $CI_BUILDS_DIR/django_app
+
+stages:
+  - Build web app container
+  - Clean container
+  - Run web app container
+
+Build web app container:
+  image: docker:19.03.1
+  stage: Build web app container
+  script:
+    - docker build . -t django_app:latest
+  tags:
+    - primary-docker
+
+Clean containers:
+  stage: Clean container
+  script:
+    - docker kill django_app
+    - docker rm django_app
+  allow_failure: true
+  tags:
+    - primary-shell
+
+Run web app:
+  stage: Run web app container
+  before_script:
+    - whoami
+  script:
+    - docker run -p 8000:8000 --name django_app django_app:latest
+  tags:
+    - primary-shell
