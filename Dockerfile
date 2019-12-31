@@ -3,19 +3,15 @@ FROM alpine:latest
 # install python3, latest pip and django 
 RUN apk add python3
 RUN pip3 install --upgrade pip
-RUN pip3 install Django
-#RUN mkdir /code
-
-# set working directory to code inside container
-#WORKDIR /code
 
 # copy project requirements.txt and download its packages
-COPY requirements.txt ./
-RUN pip3 install --no-cache-dir -r requirements.txt
+COPY requirements.txt /app/requirements.txt
+WORKDIR /app
+RUN pip3 install -r requirements.txt
 
 # copy app files
-COPY ./app_files ./app_files
-WORKDIR /app_files
+COPY ./app_files /app/app_files
 
 #run web app
+WORKDIR /app/app_files
 ENTRYPOINT ["python3", "manage.py", "runserver", "0.0.0.0:8000"]
