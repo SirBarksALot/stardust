@@ -1,7 +1,7 @@
 FROM alpine:latest
 
 # install python3, latest pip and django 
-RUN apk add python3
+RUN apk add python3.8
 RUN pip3 install --upgrade pip
 
 # copy project requirements.txt and download its packages
