@@ -18,6 +18,8 @@ services:
   app:
     container_name: app-instance
     image: django-app
+    expose:
+      - 8000
     networks:
       - nginx-net
   
