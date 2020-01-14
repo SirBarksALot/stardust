@@ -6,11 +6,11 @@ services:
     ports:
       - 443:443
       - 80:80
-    volumes:
-      - ./etc/nginx/nginx.conf:/etc/nginx/nginx.conf
-      - ./etc/nginx/conf.d:/etc/nginx/conf.d
-      - ./etc/nginx/ssl:/etc/nginx/ssl
-      - ./etc/ssl/certs/dhparam.pem:/etc/ssl/certs/dhparam.pem
+#    volumes:
+#      - ./nginx_files/nginx.conf:/etc/nginx/nginx.conf
+#      - ./nginx_files/conf.d:/etc/nginx/conf.d
+#      - ./nginx_files/ssl:/etc/nginx/ssl
+#      - ./etc/ssl/certs/dhparam.pem:/etc/ssl/certs/dhparam.pem
     networks:
       - nginx-net
       - host-bridge
