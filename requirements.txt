@@ -1,1 +1,3 @@
 Django
+django-cassandra-engine
+django-crispy-forms
