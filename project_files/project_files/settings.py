@@ -78,8 +78,11 @@ WSGI_APPLICATION = 'project_files.wsgi.application'
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {},
-    'cassandra-users': {
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.sqlite3',
+    #     'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    # },
+    'default': {
         'ENGINE': 'django_cassandra_engine',
         'NAME': 'users',
         'USER': 'cassandra',
@@ -112,7 +115,8 @@ DATABASES = {
 }
 
 DATABASE_ROUTERS = [
-    'routers.usersrouter.UsersRouter',
+    'routers.authrouter.AuthRouter',
+    # 'routers.usersrouter.UsersRouter',
     'routers.graphrouter.GraphRouter',
 ]
 
