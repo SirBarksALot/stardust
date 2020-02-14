@@ -1,3 +1,3 @@
 # django-app
 
-Django web app
+Graph django web app

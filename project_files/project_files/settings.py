@@ -31,7 +31,6 @@ ALLOWED_HOSTS = ['localhost', '35.233.102.126']
 # Application definition
 
 INSTALLED_APPS = [
-    'django_cassandra_engine',
     'graph',
     'users',
     'crispy_forms',
@@ -79,46 +78,16 @@ WSGI_APPLICATION = 'project_files.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    },
-    'cassandra-users': {
-        'ENGINE': 'django_cassandra_engine',
+        'ENGINE': 'djongo',
         'NAME': 'users',
-        'USER': 'cassandra',
-        'PASSWORD': 'cassandra',
-        'TEST_NAME': 'test_db_users',
-        'HOST': '35.194.33.244',
-        'PORT': '9042',
-        'OPTIONS': {
-            'replication': {
-                'strategy_class': 'SimpleStrategy',
-                'replication_factor': 1
-            },
-        },
-    },
-    'cassandra-items': {
-        'ENGINE': 'django_cassandra_engine',
-        'NAME': 'items',
-        'USER': 'cassandra',
-        'PASSWORD': 'cassandra',
-        'TEST_NAME': 'test_db_items',
-        'HOST': '35.194.33.244',
-        'PORT': '9042',
-        'OPTIONS': {
-            'replication': {
-                'strategy_class': 'SimpleStrategy',
-                'replication_factor': 1
-            },
-        },
+        'HOST': 'mongodb://users_user:Truskawka1*@23.251.129.52:27017/?authSource=users',
+        'USERNAME': 'users_user',
+        'PASSWORD': 'Truskawka1*',
     },
 }
 
 DATABASE_ROUTERS = [
     'routers.mainrouter.MainRouter',
-    # 'routers.authrouter.AuthRouter',
-    # 'routers.usersrouter.UsersRouter',
-    # 'routers.graphrouter.GraphRouter',
 ]
 
 # Password validation
