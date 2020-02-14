@@ -80,9 +80,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'djongo',
         'NAME': 'users',
-        'HOST': 'mongodb://users_user:Truskawka1*@23.251.129.52:27017/?authSource=users',
+        'HOST': 'mongodb://users_user:Password@23.251.129.52:27017/?authSource=users',
         'USERNAME': 'users_user',
-        'PASSWORD': 'Truskawka1*',
+        'PASSWORD': 'Password',
     },
 }
 
