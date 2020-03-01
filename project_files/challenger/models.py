@@ -3,7 +3,9 @@ from django.utils import timezone
 from django.contrib.auth.models import User
 
 
-class Item(models.Model):
+class Challenge(models.Model):
+    class Meta:
+        app_label = 'challenger'
     name = models.CharField(max_length=100)
     unique_name = models.CharField(max_length=100)
     description = models.TextField()

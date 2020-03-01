@@ -1,3 +1,4 @@
-Django
-djongo
-django-crispy-forms
+Django==3.0.3
+psycopg2==2.8.4
+djongo==1.3.1
+django-crispy-forms==1.9.0

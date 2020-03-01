@@ -21,11 +21,11 @@ def home(request):
     context = {
         'posts': posts
     }
-    return render(request, 'graph/home.html', context)
+    return render(request, 'challenger/home.html', context)
 
 
 def about(request):
     context = {
         'title': 'About'
     }
-    return render(request, 'graph/about.html', context)
+    return render(request, 'challenger/about.html', context)
