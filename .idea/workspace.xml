@@ -1,26 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a30b2aae-2ff6-4267-b799-ef65e0c6ba47" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/front/base.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stardust/challenger/templates/challenger/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stardust/challenger/templates/challenger/base_site.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stardust/challenger/templates/challenger/sidebar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stardust/users/templates/users/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stardust/users/templates/users/register.html" afterDir="false" />
+    <list default="true" id="05ea527c-2b17-4b2c-9061-25668fb06d93" name="Default Changelist" comment="add all">
+      <change afterPath="$PROJECT_DIR$/stardust/challenger/templates/challenger/top_navigation.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_files/challenger/templates/challenger/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/project_files/challenger/templates/challenger/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_files/challenger/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/project_files/challenger/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stardust/challenger/templates/challenger/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/stardust/challenger/templates/challenger/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stardust/challenger/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/stardust/challenger/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stardust/challenger/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/stardust/challenger/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stardust/stardust/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/stardust/stardust/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stardust/stardust/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/stardust/stardust/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stardust/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/stardust/users/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stardust/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/stardust/users/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stardust/challenger/templates/challenger/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/stardust/challenger/templates/challenger/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stardust/challenger/templates/challenger/base_site.html" beforeDir="false" afterPath="$PROJECT_DIR$/stardust/challenger/templates/challenger/base_site.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stardust/users/templates/users/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/stardust/users/templates/users/login.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,14 +32,15 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/stardust/users" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\phil\PycharmProjects\django_app\stardust\challenger\templates\challenger" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\phil\PycharmProjects\django_app\stardust\users" />
       <recent name="C:\Users\phil\PycharmProjects\django_app\stardust\challenger" />
       <recent name="C:\Users\phil\PycharmProjects\django_app\stardust\challenger\templates\challenger" />
       <recent name="C:\Users\flezu\Documents\django_app\stardust\challenger\templates\challenger" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\flezu\Documents\django_app\stardust\challenger\templates\challenger" />
+      <recent name="C:\Users\phil\PycharmProjects\django_app\stardust\challenger\templates\challenger" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -72,7 +60,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a30b2aae-2ff6-4267-b799-ef65e0c6ba47" name="Default Changelist" comment="" />
+      <changelist id="05ea527c-2b17-4b2c-9061-25668fb06d93" name="Default Changelist" comment="add all" />
       <created>1576582155641</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />

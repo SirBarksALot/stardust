@@ -5,7 +5,8 @@
 {% block stylesheets %}
   {{ block.super }}
   <!-- Animate.css -->
-  <link href="https://storage.cloud.google.com/stardust_app/static/vendors/animate.css/animate.min.css" rel="stylesheet">
+  {% load static %}
+  <link href="{% static "static/vendors/animate.css/animate.min.css" %}" rel="stylesheet">
 {% endblock stylesheets %}
 
 {% block body_class %}login{% endblock body_class %}
