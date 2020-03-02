@@ -1,55 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="05ea527c-2b17-4b2c-9061-25668fb06d93" name="Default Changelist" comment="add all">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project_files/challenger/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project_files/challenger/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project_files/challenger/templates/challenger/about.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project_files/challenger/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stardust/challenger/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stardust/challenger/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stardust/challenger/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stardust/challenger/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stardust/challenger/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stardust/challenger/templates/challenger/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stardust/challenger/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stardust/challenger/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stardust/challenger/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stardust/db.sqlite3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stardust/manage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stardust/stardust/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stardust/stardust/asgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stardust/stardust/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stardust/stardust/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stardust/stardust/wsgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stardust/users/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stardust/users/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stardust/users/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stardust/users/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stardust/users/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stardust/users/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stardust/users/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stardust/users/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_files/graph/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_files/graph/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/project_files/challenger/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_files/graph/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_files/graph/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/project_files/challenger/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_files/graph/static/graph/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/project_files/challenger/static/challenger/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_files/graph/templates/graph/about.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_files/graph/templates/graph/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/project_files/challenger/templates/challenger/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_files/graph/templates/graph/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/project_files/challenger/templates/challenger/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_files/graph/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/project_files/challenger/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_files/graph/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_files/graph/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/project_files/challenger/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_files/project_files/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/project_files/project_files/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_files/project_files/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/project_files/project_files/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_files/routers/authrouter.py" beforeDir="false" afterPath="$PROJECT_DIR$/project_files/routers/users_router.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_files/routers/graphrouter.py" beforeDir="false" afterPath="$PROJECT_DIR$/project_files/routers/challenger_router.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_files/routers/mainrouter.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_files/routers/usersrouter.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_files/users/templates/users/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/project_files/users/templates/users/register.html" afterDir="false" />
+    <list default="true" id="a30b2aae-2ff6-4267-b799-ef65e0c6ba47" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/front/base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stardust/challenger/templates/challenger/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stardust/challenger/templates/challenger/base_site.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stardust/challenger/templates/challenger/sidebar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stardust/users/templates/users/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stardust/users/templates/users/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_files/challenger/templates/challenger/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/project_files/challenger/templates/challenger/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_files/challenger/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/project_files/challenger/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stardust/challenger/templates/challenger/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/stardust/challenger/templates/challenger/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stardust/challenger/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/stardust/challenger/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stardust/challenger/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/stardust/challenger/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stardust/stardust/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/stardust/stardust/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stardust/stardust/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/stardust/stardust/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stardust/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/stardust/users/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stardust/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/stardust/users/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,8 +31,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -71,10 +42,16 @@
   <component name="ProjectId" id="1V6mwEtvNEOtE4ZsLff1SQ4Y2Gt" />
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/stardust/challenger/templates/challenger" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/stardust/users" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\phil\PycharmProjects\django_app\stardust\challenger\templates\challenger" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\phil\PycharmProjects\django_app\stardust\users" />
+      <recent name="C:\Users\phil\PycharmProjects\django_app\stardust\challenger" />
+      <recent name="C:\Users\phil\PycharmProjects\django_app\stardust\challenger\templates\challenger" />
       <recent name="C:\Users\flezu\Documents\django_app\stardust\challenger\templates\challenger" />
     </key>
   </component>
@@ -95,7 +72,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="05ea527c-2b17-4b2c-9061-25668fb06d93" name="Default Changelist" comment="" />
+      <changelist id="a30b2aae-2ff6-4267-b799-ef65e0c6ba47" name="Default Changelist" comment="" />
       <created>1576582155641</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />

@@ -12,6 +12,6 @@ RUN pip3 install -r requirements.txt
 # copy app files
 COPY ./app_files /app/app_files
 
-#run web app
+# run web app
 WORKDIR /app/app_files
 ENTRYPOINT ["python3", "manage.py", "runserver", "0.0.0.0:8000"]

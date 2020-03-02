@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% if title %}
+        <title>Stardust | {{ title }}</title>
+    {% else %}
+        <title>Stardust</title>
+    {% endif %}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+  {% load static %}
+  <link rel="icon" sizes="any" href="{% static "/images/favicon/fairy-creature-1419870.png" %}">
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <h1>Stardust</h1>
+  <p>Stardust application</p>
+</div>
+</body>
+</html>

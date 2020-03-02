@@ -21,7 +21,7 @@ def home(request):
     context = {
         'posts': posts
     }
-    return render(request, 'challenger/home.html', context)
+    return render(request, 'challenger/index.html', context)
 
 
 def about(request):

@@ -1,0 +1,24 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1fr;
+  grid-template-rows: 0.15fr 1.5fr;
+  grid-template-areas: "Sidebar Top-bar Top-bar" "Sidebar Main-area Main-area";
+}
+
+.Sidebar {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.7fr 2fr 0.18fr;
+  grid-template-areas: "Sidebar-top" "Sidebar-main\ area" "Sidebar-footer";
+  grid-area: Sidebar;
+}
+
+.Sidebar-footer { grid-area: Sidebar-footer; }
+
+.Sidebar-main\ area { grid-area: Sidebar-main\ area; }
+
+.Sidebar-top { grid-area: Sidebar-top; }
+
+.Top-bar { grid-area: Top-bar; }
+
+.Main-area { grid-area: Main-area; }
