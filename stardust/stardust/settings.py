@@ -33,10 +33,11 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     # my apps
     'challenger.apps.ChallengerConfig',
-    'users.apps.UsersConfig',
+    'account.apps.AccountConfig',
 
     # additional apps
     'rest_framework',
+    'rest_framework.authtoken',
 
     # django apps
     'django.contrib.admin',
@@ -47,7 +48,13 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 ]
 
-AUTH_USER_MODEL = 'users.User'
+AUTH_USER_MODEL = 'account.Account'
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.TokenAuthentication',
+    ]
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
