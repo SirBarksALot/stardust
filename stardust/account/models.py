@@ -21,7 +21,7 @@ class AccountManager(BaseUserManager):
             email=self.normalize_email(email)
         )
         user.set_password(password)
-        user.save(using=self._db)
+        user.save()
 
         return user
 
@@ -35,12 +35,15 @@ class AccountManager(BaseUserManager):
         user.is_staff = True
         user.is_superuser = True
         user.is_admin = True
-        user.save(using=self._db)
+        user.save()
 
         return user
 
 
 class Account(AbstractBaseUser):
+    class Meta:
+        app_label = 'account'
+
     username = models.TextField(verbose_name='username', max_length=30, unique=True)
     email = models.EmailField(verbose_name='email', max_length=60, unique=True)
     date_joined = models.DateTimeField(verbose_name='date joined', auto_now_add=True)
