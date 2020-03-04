@@ -3,9 +3,12 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework.authtoken.models import Token
 from .serializers import RegistrationSerializer
+from rest_framework.permissions import AllowAny
 
 
 class RegistrationView(APIView):
+    permission_classes = [AllowAny]
+
     def post(self, request):
         serializer = RegistrationSerializer(data=request.data)
         data = {}

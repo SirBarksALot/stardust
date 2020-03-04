@@ -8,6 +8,7 @@ from rest_framework.authtoken.models import Token
 
 class AccountManager(BaseUserManager):
     def create_user(self, username, email, password=None):
+        # these 3 are validated in serializer, leaving it just in case
         if not username:
             raise ValueError('You must provide username.')
         if not email:

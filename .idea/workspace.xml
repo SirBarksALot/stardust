@@ -1,11 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a30b2aae-2ff6-4267-b799-ef65e0c6ba47" name="Default Changelist" comment="adding rest api">
+    <list default="true" id="a30b2aae-2ff6-4267-b799-ef65e0c6ba47" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/stardust/account/backends/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stardust/account/backends/auth.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stardust/challenger/api/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stardust/challenger/api/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stardust/challenger/api/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stardust/challenger/api/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stardust/stardust/routers/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stardust/stardust/routers/challenges_router.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stardust/stardust/routers/users_router.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stardust/account/api/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/stardust/account/api/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stardust/account/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/stardust/account/api/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stardust/account/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/stardust/account/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stardust/challenger/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/stardust/challenger/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stardust/challenger/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/stardust/challenger/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stardust/stardust/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/stardust/stardust/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stardust/stardust/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/stardust/stardust/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,19 +41,20 @@
   <component name="ProjectId" id="1V6mwEtvNEOtE4ZsLff1SQ4Y2Gt" />
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/stardust/users" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/stardust/challenger" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\phil\PycharmProjects\django_app\stardust\challenger" />
+      <recent name="C:\Users\phil\PycharmProjects\django_app\stardust\users" />
+      <recent name="C:\Users\phil\PycharmProjects\django_app\stardust\challenger\templates\challenger" />
+      <recent name="C:\Users\flezu\Documents\django_app\stardust\challenger\templates\challenger" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\phil\PycharmProjects\django_app\stardust\account\backends" />
       <recent name="C:\Users\phil\PycharmProjects\django_app\stardust\users\api" />
       <recent name="C:\Users\flezu\Documents\django_app\stardust\challenger\templates\challenger" />
       <recent name="C:\Users\phil\PycharmProjects\django_app\stardust\challenger\templates\challenger" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\phil\PycharmProjects\django_app\stardust\users" />
-      <recent name="C:\Users\phil\PycharmProjects\django_app\stardust\challenger" />
-      <recent name="C:\Users\phil\PycharmProjects\django_app\stardust\challenger\templates\challenger" />
-      <recent name="C:\Users\flezu\Documents\django_app\stardust\challenger\templates\challenger" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -93,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583279671787</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fixing mail normalization and validation">
+      <created>1583314851675</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1583314851675</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -112,6 +134,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add all" />
     <MESSAGE value="adding rest api" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding rest api" />
+    <MESSAGE value="fixing mail normalization and validation" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing mail normalization and validation" />
   </component>
 </project>

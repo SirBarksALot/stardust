@@ -53,8 +53,15 @@ AUTH_USER_MODEL = 'account.Account'
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework.authentication.TokenAuthentication',
+    ],
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticated',
     ]
 }
+
+#AUTENTICATION_BACKEND = [
+#    'account.auth.backends.EmailOrUserBackend'
+#]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -91,15 +98,39 @@ WSGI_APPLICATION = 'stardust.wsgi.application'
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
+    'default': {},
+    'users': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'default',
+        'NAME': 'users',
         'USER': 'admin',
         'PASSWORD': 'Truskawka1*',
         'HOST': '23.251.129.52',
         'PORT': '5432',
-    }
+    },
+    'challenges': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'challenges',
+        'USER': 'admin',
+        'PASSWORD': 'Truskawka1*',
+        'HOST': '23.251.129.52',
+        'PORT': '5432',
+    },
+    # 'challenges': {
+    #     'ENGINE': 'djongo',
+    #     'NAME': 'graph',
+    #     'HOST': '23.251.129.52',
+    #     'PORT': '27017',
+    #     'USER': 'graph_user',
+    #     'PASSWORD': 'Truskawka1*',
+    #     'AUTH_SOURCE': 'graph',
+    #     'AUTH_MECHANISM': 'SCRAM-SHA-1',
+    # }
 }
+
+DATABASE_ROUTERS = [
+    'stardust.routers.users_router.UsersRouter',
+    'stardust.routers.challenges_router.ChallengesRouter',
+]
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
