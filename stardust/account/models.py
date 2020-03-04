@@ -40,7 +40,7 @@ class AccountManager(BaseUserManager):
 
 
 class Account(AbstractBaseUser):
-    username = models.TextField(max_length=30, unique=True)
+    username = models.TextField(verbose_name='username', max_length=30, unique=True)
     email = models.EmailField(verbose_name='email', max_length=60, unique=True)
     date_joined = models.DateTimeField(verbose_name='date joined', auto_now_add=True)
     last_login = models.DateTimeField(verbose_name='last login', auto_now=True)
@@ -50,7 +50,7 @@ class Account(AbstractBaseUser):
     is_superuser = models.BooleanField(default=False)
 
     USERNAME_FIELD = 'username'
-    REQUIRED_FIELDS = ['email']
+    REQUIRED_FIELDS = ['email', ]
 
     objects = AccountManager()
 

@@ -12,20 +12,20 @@ class RegistrationSerializer(serializers.ModelSerializer):
             'password': {'write_only': True}
         }
 
-    def validate(self, data):
-        if not data['username'].isalnum():
-            raise serializers.ValidationError({'username': 'Only alphanumeric character allowed in username.'})
-        return data
-
-    def normalize_email(self):
-        mail = self.validated_data['email']
-        pivot = mail.find('@')
-        return mail[:pivot] + mail[pivot:].lower()
+    #def validate(self, data):
+    #    if not data['username'].isalnum():
+    #        raise serializers.ValidationError({'username': 'Only alphanumeric character allowed in username.'})
+    #    return data
+#
+    #def normalize_email(self):
+    #    mail = self.validated_data['email']
+    #    pivot = mail.find('@')
+    #    return mail[:pivot] + mail[pivot:].lower()
 
     def save(self):
-        self.validated_data['email'] = self.normalize_email()
+        # self.validated_data['email'] = self.normalize_email()
 
-        user = Account(
+        user = Account.objects.create_user(
             username=self.validated_data['username'],
             email=self.validated_data['email']
         )
