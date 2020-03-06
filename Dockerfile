@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-# install python3, latest pip and django 
+# install python3, latest pip
 RUN apk add python3==3.8.1-r0
 RUN pip3 install --upgrade pip
 
