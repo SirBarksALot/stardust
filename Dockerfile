@@ -4,6 +4,9 @@ FROM alpine:latest
 RUN apk add python3==3.8.1-r0
 RUN pip3 install --upgrade pip
 
+# install postgres dependencies
+RUN apk add postgresql-dev gcc python3-dev musl-dev
+
 # copy project requirements.txt and download its packages
 COPY requirements.txt /app/requirements.txt
 WORKDIR /app
