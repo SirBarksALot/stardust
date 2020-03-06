@@ -1,5 +1,13 @@
 class UsersRouter:
-    route_app_labels = {'account', 'auth', 'contenttypes'}
+    route_app_labels = {
+        'account',
+        'authtoken',
+        'auth',
+        'contenttypes',
+        'admin',
+        'sessions',
+        'messages',
+    }
 
     def db_for_read(self, model, **hints):
         if model._meta.app_label in self.route_app_labels:

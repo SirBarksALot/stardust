@@ -1,12 +1,10 @@
 from rest_framework import serializers
-from account.models import Account
+from challenger.models import Challenge
 
 
-class RegistrationSerializer(serializers.ModelSerializer):
-    password2 = serializers.CharField(style={'input_type': 'password'}, write_only=True)
-
+class ChallengeSerializer(serializers.BaseSerializer):
     class Meta:
-        model = Account
+        model = Challenge
         fields = ['username', 'email', 'password', 'password2']
         extra_kwargs = {
             'password': {'write_only': True}

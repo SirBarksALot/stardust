@@ -1,5 +1,7 @@
 class ChallengesRouter:
-    route_app_labels = {'challenger'}
+    route_app_labels = {
+        'challenger',
+    }
 
     def db_for_read(self, model, **hints):
         if model._meta.app_label in self.route_app_labels:

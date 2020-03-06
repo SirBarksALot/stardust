@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a30b2aae-2ff6-4267-b799-ef65e0c6ba47" name="Default Changelist" comment="">
+    <list default="true" id="05ea527c-2b17-4b2c-9061-25668fb06d93" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stardust/account/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/stardust/account/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stardust/challenger/api/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/stardust/challenger/api/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stardust/challenger/api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/stardust/challenger/api/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stardust/challenger/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/stardust/challenger/api/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stardust/challenger/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/stardust/challenger/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stardust/challenger/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/stardust/challenger/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stardust/challenger/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/stardust/challenger/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stardust/stardust/routers/challenges_router.py" beforeDir="false" afterPath="$PROJECT_DIR$/stardust/stardust/routers/challenges_router.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stardust/stardust/routers/users_router.py" beforeDir="false" afterPath="$PROJECT_DIR$/stardust/stardust/routers/users_router.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stardust/stardust/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/stardust/stardust/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stardust/stardust/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/stardust/stardust/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
