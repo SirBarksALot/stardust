@@ -105,27 +105,27 @@ DATABASES = {
         'NAME': 'users',
         'USER': 'admin',
         'PASSWORD': 'Truskawka1*',
-        'HOST': '23.251.129.52',
+        'HOST': '10.132.0.29',
+        'PORT': '5432',
+    },
+    'challenges': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'challenges',
+        'USER': 'admin',
+        'PASSWORD': 'Truskawka1*',
+        'HOST': '10.132.0.29',
         'PORT': '5432',
     },
     #'challenges': {
-    #    'ENGINE': 'django.db.backends.postgresql',
-    #    'NAME': 'challenges',
-    #    'USER': 'admin',
-    #    'PASSWORD': 'Truskawka1*',
+    #    'ENGINE': 'djongo',
+    #    'NAME': 'graph',
     #    'HOST': '23.251.129.52',
-    #    'PORT': '5432',
-    #},
-    'challenges': {
-        'ENGINE': 'djongo',
-        'NAME': 'graph',
-        'HOST': '23.251.129.52',
-        'PORT': '27017',
-        'USER': 'graph_user',
-        'PASSWORD': 'Truskawka1*',
-        'AUTH_SOURCE': 'graph',
-        'AUTH_MECHANISM': 'SCRAM-SHA-1',
-    }
+    #    'PORT': '27017',
+    #    'USER': 'graph_user',
+    #    'PASSWORD': 'Truskawka1*',
+    #    'AUTH_SOURCE': 'graph',
+    #    'AUTH_MECHANISM': 'SCRAM-SHA-1',
+    #}
 }
 
 DATABASE_ROUTERS = [
