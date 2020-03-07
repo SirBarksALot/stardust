@@ -25,7 +25,7 @@ SECRET_KEY = '!+69-hx@-8luz2^!cj_g9!1=!#%+06wqdq#)h!pa%yemisolsv'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', '.graphspace.me']
 
 
 # Application definition
@@ -51,12 +51,25 @@ INSTALLED_APPS = [
 AUTH_USER_MODEL = 'account.Account'
 
 REST_FRAMEWORK = {
+    # perm and auth
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework.authentication.TokenAuthentication',
     ],
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.IsAuthenticated',
-    ]
+    ],
+    # throttle
+    'DEFAULT_THROTTLE_CLASSES': [
+        'rest_framework.throttling.UserRateThrottle',
+        'rest_framework.throttling.ScopedRateThrottle',
+    ],
+    'DEFAULT_THROTTLE_RATES': {
+        'register': '10/minute',
+        'user': '15/day',
+        'anon': '100/day',
+        'challenge_user_burst': '1/minute',
+        'challenge_user_sustained': '3/hour',
+    }
 }
 
 # AUTENTICATION_BACKEND = [
