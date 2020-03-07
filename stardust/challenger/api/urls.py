@@ -1,8 +1,7 @@
 from django.urls import path
-from rest_framework.authtoken import views
-from .views import IndexView
+from .views import ChallengeView
 
 urlpatterns = [
-    #path('list', views.index, name='list'),
-    #path('create', views.index, name='create'),
+    # path('list', views.index, name='list'),
+    path('create', ChallengeView.as_view(), name='create'),
 ]

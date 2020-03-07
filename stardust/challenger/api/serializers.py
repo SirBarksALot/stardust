@@ -2,31 +2,20 @@ from rest_framework import serializers
 from challenger.models import Challenge
 
 
-class ChallengeSerializer(serializers.BaseSerializer):
+class ChallengeSerializer(serializers.ModelSerializer):
+    def __init__(self, *args, **kwargs):
+        self.owner = kwargs.pop('owner')
+        super(ChallengeSerializer, self).__init__(*args, **kwargs)
+
     class Meta:
         model = Challenge
-        fields = ['username', 'email', 'password', 'password2']
-        extra_kwargs = {
-            'password': {'write_only': True}
-        }
+        fields = ['name']
 
-    def validate(self, data):
-        if not data['username'].isalnum():
-            raise serializers.ValidationError({'username': 'Only alphanumeric character allowed in username.'})
-        return data
-
-    def save(self):
-        user = Account.objects.create_user(
-            username=self.validated_data['username'],
-            email=self.validated_data['email']
+    def create(self, validated_data):
+        challenge = Challenge.objects.create(
+            name=self.validated_data['name'],
+            owner=self.owner
         )
-        password = self.validated_data['password']
-        password2 = self.validated_data['password2']
+        challenge.save()
 
-        if password != password2:
-            raise serializers.ValidationError({'password': 'Passwords must match!'})
-
-        user.set_password(password)
-        user.save()
-
-        return user
+        return challenge

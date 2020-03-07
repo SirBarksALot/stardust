@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     # additional apps
     'rest_framework',
     'rest_framework.authtoken',
-    'rest_framework_mongoengine',
 
     # django apps
     'django.contrib.admin',
@@ -60,9 +59,9 @@ REST_FRAMEWORK = {
     ]
 }
 
-#AUTENTICATION_BACKEND = [
-#    'account.auth.backends.EmailOrUserBackend'
-#]
+# AUTENTICATION_BACKEND = [
+#     'account.auth.backends.EmailOrUserBackend'
+# ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -105,7 +104,7 @@ DATABASES = {
         'NAME': 'users',
         'USER': 'admin',
         'PASSWORD': 'Truskawka1*',
-        'HOST': '10.132.0.29',
+        'HOST': '23.251.129.52',
         'PORT': '5432',
     },
     'challenges': {
@@ -113,19 +112,9 @@ DATABASES = {
         'NAME': 'challenges',
         'USER': 'admin',
         'PASSWORD': 'Truskawka1*',
-        'HOST': '10.132.0.29',
+        'HOST': '23.251.129.52',
         'PORT': '5432',
     },
-    #'challenges': {
-    #    'ENGINE': 'djongo',
-    #    'NAME': 'graph',
-    #    'HOST': '23.251.129.52',
-    #    'PORT': '27017',
-    #    'USER': 'graph_user',
-    #    'PASSWORD': 'Truskawka1*',
-    #    'AUTH_SOURCE': 'graph',
-    #    'AUTH_MECHANISM': 'SCRAM-SHA-1',
-    #}
 }
 
 DATABASE_ROUTERS = [
