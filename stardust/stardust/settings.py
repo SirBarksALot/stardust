@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     # my apps
     'challenger.apps.ChallengerConfig',
     'account.apps.AccountConfig',
+    'checker.apps.CheckerConfig',
 
     # additional apps
     'rest_framework',
